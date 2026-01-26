@@ -4,111 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aljon K. Bangiacan | ERP Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="margin:0; padding:0; background-color:#f4f7f6; font-family:'Segoe UI', sans-serif; color:#2d3436;">
+<body>
 
-    <!-- Navigation Bar -->
-    <nav style="position:fixed; top:0; width:100%; background-color:#ffffff; border-bottom:1px solid #eeeeee; z-index:1000; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
-        <div style="max-width:850px; margin:auto; padding:15px; display:flex; justify-content:space-between; align-items:center;">
-            <div style="font-weight:bold; font-size:14px; color:#13e0eb; letter-spacing:1px;">AB.2026</div>
-            <div>
-                <a href="#about" style="text-decoration:none; color:#2d3436; font-size:12px; font-weight:600; margin-left:20px;">About</a>
-                <a href="#education" style="text-decoration:none; color:#2d3436; font-size:12px; font-weight:600; margin-left:20px;">Education</a>
-                <a href="#skills" style="text-decoration:none; color:#2d3436; font-size:12px; font-weight:600; margin-left:20px;">Skills</a>
-                <a href="#contact" style="text-decoration:none; color:#ffffff; background-color:#13e0eb; padding:8px 15px; border-radius:4px; font-size:12px; font-weight:600; margin-left:20px;">Contact</a>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AB.2026</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="contact-btn">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div style="height:90px;"></div>
+    <div class="spacer"></div>
 
     <!-- Main Content -->
-    <div style="max-width:850px; margin:20px auto 60px; background:#ffffff; padding:60px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.02);">
+    <main class="container">
 
         <!-- About -->
-        <header id="about" style="margin-bottom:60px; border-left:5px solid #13e0eb; padding-left:30px;">
-            <div style="display:flex; justify-content:space-between; align-items:center; gap:20px;">
+        <header id="about" class="fade-up">
+            <div class="header-flex">
                 <div>
-                    <h1 style="margin:0; font-size:46px; color:#1a1a1a;">ALJON K. BANGIACAN</h1>
-                    <p style="margin:10px 0 0; font-size:18px; color:#636e72;">
-                        2nd Year IT Student • <span style="color:#13e0eb; font-weight:600;">Enterprise Resource Planning</span>
+                    <h1>ALJON K. BANGIACAN</h1>
+                    <p class="subtitle">
+                        2nd Year IT Student •
+                        <span class="highlight">Enterprise Resource Planning</span>
                     </p>
-                    <p style="margin-top:15px; font-size:14px; color:#b2bec3; font-style:italic;">
+                    <p class="tagline">
                         Specializing in the optimization of organizational workflows through digital systems.
                     </p>
                 </div>
 
-                <!-- FIXED IMAGE (replace with your real direct image URL) -->
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DNH3C1Jqf5T_cD9XEDN68Jht81gK6SMOGX2oEU31jNXgzyYaaesj_TsIAIuIPDHaIwFuUwyia0rzIIrcFApqNPBgsyqs-dCNrtEm9wM&s=10"
-                     alt="Aljon K. Bangiacan"
-                     width="120" height="120"
-                     style="border-radius:50%; border:4px solid #13e0eb; box-shadow:0 0 15px rgba(19,224,235,0.4); object-fit:cover;">
+                <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9DNH3C1Jqf5T_cD9XEDN68Jht81gK6SMOGX2oEU31jNXgzyYaaesj_TsIAIuIPDHaIwFuUwyia0rzIIrcFApqNPBgsyqs-dCNrtEm9wM&s=10"
+                    alt="Aljon K. Bangiacan"
+                    class="profile-img"
+                >
             </div>
         </header>
 
         <!-- Profile -->
-        <section style="margin-bottom:50px;">
-            <h2 style="font-size:13px; letter-spacing:2px; color:#13e0eb; text-transform:uppercase;">Profile</h2>
-            <p style="font-size:16px; line-height:1.8; color:#4a4a4a;">
-                Based in <b>Sabangan, Mountain Province</b>, I am currently navigating my second year at the
-                <b>University of the Cordilleras</b>. My focus lies in <b>ERP Systems</b>, integrating core
-                business processes into efficient digital workflows.
+        <section class="fade-up delay-1">
+            <h2 class="section-title">Profile</h2>
+            <p class="section-text">
+                Based in <strong>Sabangan, Mountain Province</strong>, I am currently navigating my second year at the
+                <strong>University of the Cordilleras</strong>. My focus lies in <strong>ERP Systems</strong>,
+                integrating core business processes into efficient digital workflows.
             </p>
         </section>
 
         <!-- Education -->
-        <section id="education" style="margin-bottom:50px;">
-            <h2 style="font-size:13px; letter-spacing:2px; color:#13e0eb; text-transform:uppercase;">Academic Foundation</h2>
-            <div style="padding:25px; background:#fcfcfc; border:1px solid #f0f0f0; border-radius:6px;">
-                <div style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+        <section id="education" class="fade-up delay-2">
+            <h2 class="section-title">Academic Foundation</h2>
+            <div class="edu-box">
+                <div class="edu-flex">
                     <div>
-                        <strong style="font-size:18px;">University of the Cordilleras</strong><br>
-                        <span style="color:#636e72;">BS Information Technology</span>
+                        <strong>University of the Cordilleras</strong><br>
+                        <span>BS Information Technology</span>
                     </div>
-                    <div style="color:#13e0eb; font-weight:bold;">2024 — 2027</div>
+                    <div class="edu-year">2024 — 2027</div>
                 </div>
-                <p style="margin-top:15px; font-size:14px;">
-                    <b>Specialization:</b> ERP<br>
-                    <b>Status:</b> 2nd Year Student
+                <p class="section-text">
+                    <strong>Specialization:</strong> ERP<br>
+                    <strong>Status:</strong> 2nd Year Student
                 </p>
             </div>
         </section>
 
         <!-- Skills -->
-        <section id="skills" style="margin-bottom:50px;">
-            <h2 style="font-size:13px; letter-spacing:2px; color:#13e0eb; text-transform:uppercase;">Competencies</h2>
-            <div style="display:flex; gap:30px; flex-wrap:wrap;">
-                <div style="flex:1;">
-                    <b>Core Strengths</b>
-                    <p style="font-size:13px; color:#636e72;">Leadership, professionalism, adaptability.</p>
+        <section id="skills" class="fade-up delay-3">
+            <h2 class="section-title">Competencies</h2>
+            <div class="skills">
+                <div>
+                    <strong>Core Strengths</strong>
+                    <p>Leadership, professionalism, adaptability.</p>
                 </div>
-                <div style="flex:1;">
-                    <b>Technical Focus</b>
-                    <p style="font-size:13px; color:#636e72;">Business process integration, documentation, databases.</p>
+                <div>
+                    <strong>Technical Focus</strong>
+                    <p>Business process integration, documentation, databases.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section id="contact" style="padding:40px; background:#1a1a1a; border-radius:8px; color:#ffffff;">
-            <h2 style="font-size:13px; letter-spacing:2px; color:#13e0eb; text-transform:uppercase;">Secure Connection</h2>
+        <section id="contact" class="contact fade-up">
+            <h2 class="section-title">Secure Connection</h2>
             <p>
-                <span style="color:#636e72; font-size:12px;">Email</span><br>
-                <a href="mailto:bangiacanaljonk@gmail.com" style="color:#ffffff; text-decoration:none;">bangiacanaljonk@gmail.com</a>
+                <span>Email</span><br>
+                <a href="mailto:bangiacanaljonk@gmail.com">
+                    bangiacanaljonk@gmail.com
+                </a>
             </p>
             <p>
-                <span style="color:#636e72; font-size:12px;">Mobile</span><br>
+                <span>Mobile</span><br>
                 +63 909 202 1123
             </p>
         </section>
 
-    </div>
+    </main>
 
-    <footer style="text-align:center; padding-bottom:40px; font-size:12px; color:#b2bec3;">
+    <footer>
         Designed for the 2026 Digital Landscape • Aljon Bangiacan
     </footer>
 
+    <!-- Scroll Animation Script -->
+    <script>
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            },
+            { threshold: 0.15 }
+        );
+
+        document.querySelectorAll('.fade-up').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
 </body>
 </html>
-
