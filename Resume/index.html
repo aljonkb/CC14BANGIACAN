@@ -270,26 +270,113 @@
 
 <section id="contact">
 
-   <div class="row section-intro">
-      <div class="col-twelve">
+		<div class="row section-intro">
+   		<div class="col-twelve">
 
-         <h5>Contact</h5>
-         <h1>I'd Love To Hear From You.</h1>
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
 
-         <p class="lead">
-            Feel free to reach out for academic collaboration, school-related inquiries,
-            or future professional opportunities. I am always open to learning and growth.
-         </p>
+   			<p class="lead">Let's connect and kickstart our journey together! Whether you have burning questions, exciting project ideas, or just want to say hello, this is the place to do it. Fill out the form below and let's bridge the gap between your aspirations and the solutions I can offer. Your message is my top priority, and I'm eager to hear from you. Don't hesitate—reach out today and let's turn your visions into reality!</p>
 
-         <div class="contact-info">
-            <p><i class="fa fa-envelope"></i> <a href="mailto:bangiacanaljonnk@gmail.com">bangiacanaljonnk@gmail.com</a></p>
-            <p><i class="fa fa-phone"></i> <a href="tel:09202126205">09202126205</a></p>
-         </div>
+   		</div>
+   	</div> <!-- /section-intro -->
 
-      </div>
-   </div>
+   	<div class="row contact-form">
 
-</section>
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">
+            </div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Honeymoon-Holyghost<br>
+            Baguio City<br>
+            2600 Philippines
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>bangiacanaljonk@gmail.com<br>
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Phone: (+63) 920 213 9441<br>
+			   	<br>
+
+			   </p>
+
+   		</div>
+
+   	</div> <!-- /contact-info -->
+
+	</section> <!-- /contact -->
 
 <footer>
    <div class="row">
